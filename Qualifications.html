@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-image: url('images\index1.jpg');
+}
+  .responsive1 {
+  max-width: 79%;
+  height: auto;
+}
+body {margin:0;font-family:Arial}
+
+.topnav {
+  position:fixed;
+width:100%;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+.btn-group {
+  background-color: #dcf7f6;
+  width: 86%;
+  
+  padding: 10px;
+  
+}
+.inner {
+  background-color: #dcf7f6;
+  width: 75%;
+
+  padding: 10px;
+  
+}
+.jumbotron {
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+font-size: 1.5em;
+padding:50px;
+    padding-left: 15%;
+    background-color: #c5908e;
+}
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}
+</style>
+<script type="text/javascript">
+function showSpoiler(obj)
+    {
+    var inner = obj.parentNode.getElementsByTagName("div")[0];
+    if (inner.style.display == "none")
+        inner.style.display = "";
+    else
+        inner.style.display = "none";
+    }
+    </script>
+</head>
+<body style="background-color:#bfbfbf;background-image: url('images\index1.jpg');">  
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+ <a href="Qualifications.html">Academics</a>
+
+<div class="dropdown">
+    <button class="dropbtn">About Me
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="About_me.html#b">My Interests</a>
+      <a href="About_me.html#a">My Hobbies</a>
+       </div>
+  </div>
+  <a href="Projects.html"><div>My Projects</div></a>
+  <a href="index.html#c">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<br>
+<br>
+<font style="color:white;font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;font-size:21px;color:Purple;">
+<center><h1>Qualifications</h1></center>
+</font>
+<div  id="b" class="jumbotron" style="font-size: 1.2em; padding-left:15%;background-color:#3fb8e2;" id="interests">
+    <h2>B.Tech&nbsp;&nbsp; (2016 - 2020)</h2>
+ <img onclick="showSpoiler(this);" src="images\college.jpg"  class="responsive1" style="height:160px;
+width:450px;"/>
+     <div class="inner" style="display:none;">
+      <font style="color:black;font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;font-size:20px;">
+<b><h3><font style="color:#5f0e7f;
+    font-family: sans-serif;">SNIST, Hyderabad</font><h3></b><ul>
+<li>Major :Computer Science and Engineering</li>
+<li>C.G.P.A : 9.76 / 10</li>
+</ul></font>
+
+    </div>
+</div>
+<div  id="b" class="jumbotron" style="font-size: 1.2em; padding-left:15%;background-color:#3fb8e2;" id="interests">
+    <h2>Intermediate &nbsp;&nbsp;(2014-2016)</h2>
+     <img onclick="showSpoiler(this);" src="images\intermediate1.jpg"  class="responsive1" style="height:160px;
+width:350px;"/>
+      <div class="inner" style="display:none;"><font style="color:black;font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;font-size:20px;">
+<b><h3> <font style="color:#5f0e7f;
+    font-family: sans-serif;">Excel Junior College, Hyderabad</font></h3></b>
+<ul>
+<li>Major :MPC</li>
+<li>Percentage : 97%</li>
+</ul></font>
+
+    </div>
+</div>
+<div  id="b" class="jumbotron" style="font-size: 1.2em; padding-left:15%;background-color:#3fb8e2;" id="interests">
+    <h2>Class - X</h2>
+<img onclick="showSpoiler(this);" src="images\bpdav.jpg"  class="responsive1" style="height:160px;
+width:350px;"/>
+     <div class="inner" style="display:none;">
+<font style="color:black;font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;font-size:20px;">    
+  <b><h3><font style="color:#5f0e7f;
+    font-family: sans-serif;">Brahm Prakash DAV School, Hyderabad  </font></b></h3> <ul>
+<li>C.G.P.A :9.8 / 10</li>
+</ul>
+</font>
+    </div>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>

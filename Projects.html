@@ -1,0 +1,247 @@
+<html>
+<head>  
+  <title>Portfolio</title>  
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+   <style>body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {margin:0;font-family:Arial}
+
+.topnav {
+  position:fixed;
+  background-color: #333;
+width:100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+.btn-group {
+  background-color: #ffdfdd;
+  width: 100%;
+  
+  padding: 10px;
+  
+}
+.jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+padding:50px;
+font-size: 1.5em;
+border: 20px solid Purple;
+    padding-left: 15%;
+    background-color: #c5908e;
+}
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #eee;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+</style>
+</head>
+<body style="background-color:#bfbfbf;">  
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+ <a href="Qualifications.html">Academics</a>
+
+<div class="dropdown">
+    <button class="dropbtn">About Me
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="About_me.html#b">My Interests</a>
+      <a href="About_me.html#a">My Hobbies</a>
+       </div>
+  </div>
+  <a href="Projects.html"><div>My Projects</div></a>
+  <a href="index.html#c">Contact</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<br>
+<br>
+<br>
+<div  id="b" class="jumbotron" style="font-size: 1.5em; padding-left:15%;background-color:#c5908e;" id="interests">
+    <h2>Tracking of Underwater Objects Using Kalman Filter </h2>
+     <div class="btn-group">
+      <font style="color:black;font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;font-size:20px;"><h4>Description:</h4>
+This project introduces a system for tracking a detected underwater object using the recorded video. The proposed system implements Kalman Filter by predicting the next object location from the current detected object location and Hungarian Algorithm for tracking the objects.    <br>
+    </font>
+<br>
+    </div>
+</div>
+
+<div  id="b" class="jumbotron" style="font-size: 1.5em; padding-left:15%;background-color:#c5908e;" id="interests">
+    <h2>Movie Recommendation System</h2>
+        <div class="btn-group">
+      <font style="color:black;font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;font-size:20px;">
+      <h4>Description:</h4>
+
+The objective of this movie recommendation system is to provide accurate movie recommendations to users by taking in a movie that a user currently likes as input i.e., by analyzing the contents (storyline, genre, cast, director, keywords etc.) of the movie to find out other movies which have similar content and then ranking similar movies according to their similarity scores, popularity and vote count etc withthe help of machine learning.
+   <br></font>
+<br>   
+    </div>
+</div>
+
+<div  id="b" class="jumbotron" style="font-size: 1.5em; padding-left:15%;background-color:#c5908e" id="interests">
+    <h2>Big data and its Visualization </h2>
+    <div class="btn-group">
+      <font style="color:black;font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;font-size:20px;">
+      <h4>Description:</h4>
+Big Data when used in accordance with infographics and other visual elements, allows to generate answers faster. Visualization is an important approach to helping Big Data get a complete view of data and discover data values. Here, it is discussed how Big Data analytics and visualization can be integrated to get the best result in Big Data applications.  <br>
+  </font>  
+<br>
+    </div>
+</div>
+
+<div  id="b" class="jumbotron" style="font-size: 1.5em; padding-left:15%;background-color:#c5908e;" id="interests">
+    <h2>Failure of Linear Solvers and Corrective Measures</h2>
+  
+
+    <div class="btn-group">
+     <font style="color:black;font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;font-size:20px;">
+      <h4>Description:</h4>
+
+The increasing availability of advanced-architecture computers has a significant effect on all spheres of scientific computation, including algorithm research and software development in numerical linear algebra. This project gives an overview of widely used numerical methods for the solution of linear systems of equations. The preconditioning approach strikes the balance between the success and failure of a numerical method.  <br>
+    </font>
+<br>
+    </div>
+</div>
+<div  id="b" class="jumbotron" style="font-size: 1.5em; padding-left:15%;background-color:#c5908e;" id="interests">
+    <h2>E-Notifier  </h2>
+   
+    <div class="btn-group">
+      <font style="color:black;font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;font-size:20px;">
+      <h4>Description:</h4>
+
+E-Notifier is a website that would discover the events happening in and around the institution/organization so that no one will miss out being notified on interested events like workshops, seminars, conference etc.    <br>
+    </font>
+<br>
+    </div>
+</div>
+
+ </div>
+<br>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
